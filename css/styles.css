@@ -8,20 +8,23 @@ body{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    padding: 2% 0;
 }
 
 main{
     background: #fff;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
+    width: 45%;
     height: 40%;
+    max-width: 1000px;
 }
 
 h2 {
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-weight: 200;
     font-size: 12px;
 }
@@ -30,49 +33,92 @@ h1 {
     font-family: 'Fraunces', serif;
     color: black;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .price {
     color: hsl(158, 36%, 37%);
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 28px;
 }
 
 #discount {
     color: hsl(228, 12%, 48%);
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     text-decoration-line: line-through;
 }
 
 /*Button styles*/
+
 button{
     background: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    border: none;
     color: #fff;
+    cursor: pointer;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
+    height: 40px;
+    width: 100%;
 }
+
+button:active {
+    background-color: hsl(158, 37%, 19%);
+}
+
 
 /*Main styles*/
 .hero-image{
+    box-sizing: border-box;
     width: 50%;
+    border-radius: 20px 0 0 20px;
+    background-image: url(/images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .responsive{
     width: 100%;
     height: auto;
 }
+
+
+/*conent side styles*/
 .content{
     width: 50%;
 }
 
-/*conent side styles*/
 .content {
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
     align-items: right;
     justify-content: center;
-    padding: 30px;
+    padding: 30px 40px;
+}
+
+.main-text {
+    line-height: 150%;
+}
+
+/*Media Query*/
+@media only screen and (max-width: 800px) {
+  
+   
+     main {
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+  }
+
+  .hero-image {
+    border-radius: 20px 20px 0 0;
+    height: 300px;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
 }
