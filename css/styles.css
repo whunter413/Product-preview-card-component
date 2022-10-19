@@ -1,0 +1,78 @@
+/* Default Styles*/
+body{
+    background: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+main{
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 40%;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#discount {
+    color: hsl(228, 12%, 48%);
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration-line: line-through;
+}
+
+/*Button styles*/
+button{
+    background: hsl(158, 36%, 37%);
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Main styles*/
+.hero-image{
+    width: 50%;
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}
+.content{
+    width: 50%;
+}
+
+/*conent side styles*/
+.content {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: right;
+    justify-content: center;
+    padding: 30px;
+}
