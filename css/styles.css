@@ -74,7 +74,7 @@ button:active {
     box-sizing: border-box;
     width: 50%;
     border-radius: 20px 0 0 20px;
-    background-image: url(/images/image-product-desktop.jpg);
+    background-image: url(./images/image-product-desktop.jpg);
     background-position: center;
     background-size: cover;
 }
